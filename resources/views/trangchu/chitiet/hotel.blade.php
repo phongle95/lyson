@@ -41,7 +41,7 @@
                            <a href="{{ route('trangchu.chitiet.hotel',['slug'=>str_slug($item->tenHotel),'id'=>$item->id]) }}"><img class="smal-img" src="/{{ str_replace('\\','/',$item->img) }}" alt=""></a>
                         </div>
                         <div class="latest_post_content">
-                           <div class="latest_post_title trans_200"><a href="{{ route('trangchu.chitiet.travel',['slug'=>str_slug($item->tenHotel),'id'=>$item->id]) }}">{{ $item->tenHotel }}</a></div>
+                           <div class="latest_post_title trans_200"><a href="{{ route('trangchu.chitiet.hotel',['slug'=>str_slug($item->tenHotel),'id'=>$item->id]) }}">{{ $item->tenHotel }}</a></div>
                            <div class="latest_post_meta">
                               <div class="trending_price">From {{ number_format($item->gia) }}.vnđ</div>
                            </div>

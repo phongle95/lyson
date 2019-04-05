@@ -51,7 +51,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col d-flex flex-row">
-                            <div class="phone">+032 8811 678</div>
+                            <div class="phone">+0944-22-44-55</div>
                             <div class="social">
                                 <ul class="social_list">
                                     <li class="social_list_item"><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
@@ -131,7 +131,7 @@
         <div class='quick-call-button'></div>
             <div class='call-now-button'>
             <div><p class='call-text'></p>
-            <a href='tel:0328811678' title='Gọi ngay' >
+            <a href='tel:0944224455' title='Gọi ngay' >
             <div class='quick-alo-ph-circle active'></div>
             <div class='quick-alo-ph-circle-fill active'></div>
             <div class='quick-alo-ph-img-circle shake'></div>
@@ -155,7 +155,7 @@
                                         <a href="{{ route('trangchu.pages.trangchu') }}"><img src="travel/images/logo.png" alt="">Lý Sơn</a>
                                     </div>
                                 </div>
-                                <p class="footer_about_text">Kênh thông tin online, hỗ trợ đặt tour, đặt phong khách sạn cho thuê xe giá rẻ khi đi du lịch Lý Sơn.</p>
+                                <p class="footer_about_text">Kênh thông tin online, hỗ trợ đặt tour, đặt phòng khách sạn cho thuê xe giá rẻ khi đi du lịch Lý Sơn.</p>
                                 <ul class="footer_social_list">
                                     <li class="footer_social_item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
                                     <li class="footer_social_item"><a href="#"><i class="fa fa-facebook-f"></i></a></li>
@@ -221,7 +221,7 @@
                                         <div>
                                             <div class="contact_info_icon"><img src="travel/images/phone-call.svg" alt=""></div>
                                         </div>
-                                        <div class="contact_info_text">032-8811-678</div>
+                                        <div class="contact_info_text">0944-22-44-55</div>
                                     </li>
                                     <li class="contact_info_item d-flex flex-row">
                                         <div>
@@ -301,6 +301,14 @@
 
 
     <script src="travel/js/contact_custom.js"></script>
+     {{--  Global site tag (gtag.js) - Google Analytics   --}}
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137791324-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-137791324-1');
+    </script>
 
 
 </body>

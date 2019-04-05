@@ -48,7 +48,7 @@
                <div class="logo_container about_logo">
                   <div class="logo"><a href="#"><img src="travel/images/logo.png" alt="">Lý Sơn</a></div>
                </div>
-               <p class="about_text">Đây là chuyến du lịch được tài trợ bởi Hoàng Phúc Car nhằm review cho các bạn những điểm du lịch và những món ăn nổi tiếng tại Lý Sơn.</p>
+               <p class="about_text">Kênh thông tin online, hỗ trợ đặt tour, đặt phòng khách sạn cho thuê xe giá rẻ khi đi du lịch Lý Sơn.</p>
                <ul class="about_social_list">
                   <li class="about_social_item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
                   <li class="about_social_item"><a href="#"><i class="fa fa-facebook-f"></i></a></li>
@@ -72,7 +72,7 @@
                      <div>
                         <div class="contact_info_icon"><img src="travel/images/phone-call.svg" alt=""></div>
                      </div>
-                     <div class="contact_info_text">032-8811-678</div>
+                     <div class="contact_info_text">0944-22-44-55</div>
                   </li>
                   <li class="contact_info_item d-flex flex-row">
                      <div>

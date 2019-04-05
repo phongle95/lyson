@@ -6,11 +6,10 @@
          <!-- Slider Item -->
          <div class="owl-item home_slider_item">
             <!-- Image by https://unsplash.com/@anikindimitry -->
-            <div class="home_slider_background" style="background-image:url(travel/images/lyson1.jpg)"></div>
+            <div class="home_slider_background" style="background-image:url(travel/images/lyson1.jpg);background-image:alt('lý sơn')"></div>
             <div class="home_slider_content text-center">
                <div class="home_slider_content_inner" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
-                  <h1>Travel</h1>
-                  <h1>Lý Sơn</h1>
+                  {{--  <h1 style="font-family: Times, serif;">Lý Sơn</h1>  --}}
                   <div class="button home_slider_button">
                      <div class="button_bcg"></div>
                      <a href="{{ route('trangchu.pages.tintuc') }}">Chi Tiết<span></span><span></span><span></span></a>
@@ -20,11 +19,10 @@
          </div>
          <!-- Slider Item -->
          <div class="owl-item home_slider_item">
-            <div class="home_slider_background" style="background-image:url(travel/images/chualyson.jpg)"></div>
+            <div class="home_slider_background" style="background-image:url(travel/images/chualyson.jpg);background-image:alt(lý sơn)"></div>
             <div class="home_slider_content text-center">
                <div class="home_slider_content_inner" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
-                  <h1>Du Lịch</h1>
-                  <h1>Lý Sơn</h1>
+
                   <div class="button home_slider_button">
                      <div class="button_bcg"></div>
                      <a href="{{ route('trangchu.pages.tintuc') }}">Chi Tiết<span></span><span></span><span></span></a>
@@ -42,7 +40,7 @@
                   <stop offset='100%' stop-color='#8d4fff' />
                </linearGradient>
             </defs>
-            <path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
+            <path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h20c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
                M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
                C22.545,2,26,5.541,26,9.909V23.091z" />
             <polygon class="nav_arrow" fill="#F3F6F9" points="15.044,22.222 16.377,20.888 12.374,16.885 16.377,12.882 15.044,11.55 9.708,16.885 11.04,18.219
@@ -58,7 +56,7 @@
                   <stop offset='100%' stop-color='#8d4fff' />
                </linearGradient>
             </defs>
-            <path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
+            <path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h20c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
                M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
                C22.545,2,26,5.541,26,9.909V23.091z" />
             <polygon class="nav_arrow" fill="#F3F6F9" points="13.044,11.551 11.71,12.885 15.714,16.888 11.71,20.891 13.044,22.224 18.379,16.888 17.048,15.554
@@ -110,7 +108,7 @@
    <div class="container">
       <div class="row">
          <div class="col">
-            <h2 class="intro_title text-center">Tour Du Lịch Hot</h2>
+            <h1 class="intro_title text-center">Du Lịch Lý Sơn</h1>
          </div>
       </div>
       <div class="row">
@@ -127,7 +125,7 @@
             <div class="intro_item">
                <div class="intro_item_overlay"></div>
                <!-- Image by https://unsplash.com/@dnevozhai -->
-               <div class="intro_item_background" style="background-image:url(/{{ str_replace('\\','/',$item->img) }})"></div>
+               <div class="intro_item_background" style="background-image:url(/{{ str_replace('\\','/',$item->img) }});background-image:alt('lý sơn')"></div>
                <div class="intro_item_content d-flex flex-column align-items-center justify-content-center">
                   <div class="intro_date">ngày {{ date("d-m-Y", strtotime($item->date)) }}</div>
                   <div class="button intro_button">
@@ -135,7 +133,7 @@
                      <a href="{{ route('trangchu.chitiet.travel',['slug'=>str_slug($item->tenTour),'id'=>$item->id]) }}">Chi Tiết<span></span><span></span><span></span></a>
                   </div>
                   <div class="intro_center text-center">
-                     <h1>{{ $item->tenTour }}</h1>
+                     <h3>{{ $item->tenTour }}</h3>
                      <div class="intro_price">Giá : {{ number_format($item->gia) }}vnđ</div>
                      <div class="rating rating_4">
                         <i class="fa fa-star"></i>
@@ -190,7 +188,7 @@
                            <stop offset='100%' stop-color='#8d4fff' />
                         </linearGradient>
                      </defs>
-                     <path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
+                     <path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h20c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
                         M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
                         C22.545,2,26,5.541,26,9.909V23.091z" />
                      <polygon class="nav_arrow" fill="#F3F6F9" points="15.044,22.222 16.377,20.888 12.374,16.885 16.377,12.882 15.044,11.55 9.708,16.885 11.04,18.219
@@ -206,7 +204,7 @@
                            <stop offset='100%' stop-color='#8d4fff' />
                         </linearGradient>
                      </defs>
-                     <path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
+                     <path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h20c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
                         M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
                         C22.545,2,26,5.541,26,9.909V23.091z" />
                      <polygon class="nav_arrow" fill="#F3F6F9" points="13.044,11.551 11.71,12.885 15.714,16.888 11.71,20.891 13.044,22.224 18.379,16.888 17.048,15.554
@@ -282,7 +280,7 @@
             <!-- Testimonials Slider -->
             <div class="test_slider_container">
                <div class="owl-carousel owl-theme test_slider">
-                  <!-- Testimonial Item -->
+                   <!-- Testimonial Item -->
                   <div class="owl-item">
                      <div class="test_item">
                         <div class="test_image"><img src="travel/images/gs.jpg" alt="travel ly son"></div>
@@ -290,7 +288,7 @@
                         <div class="test_content_container">
                            <div class="test_content">
                               <div class="test_quote_title">" Nguyễn Như Ý "</div>
-                              <p class="test_quote_text">Một người bạn đã giới thiệu tôi đi xe của Lý Sơn Trip.Tôi đã có một chuyến đi vui vẻ với anh tài xế thân thiện , giá tiền phù hợp với tôi</p>
+                              <p class="test_quote_text">Một người bạn đã giới thiệu tôi đi xe của Lysonvn.Tôi đã có một chuyến đi vui vẻ với anh tài xế thân thiện , giá tiền phù hợp với tôi</p>
                            </div>
                         </div>
                      </div>
@@ -303,7 +301,7 @@
                         <div class="test_content_container">
                            <div class="test_content">
                               <div class="test_quote_title">" Nguyễn Thành Trung "</div>
-                              <p class="test_quote_text">Lý Sơn Trip là một dịch vụ tốt xe ở đây sạch xẽ. Tài xế nhiệt tình,chu đáo và đúng giờ chuyến du lịch của chúng tôi thật tuyệt vời.Cảm ơn Lý Sơn Trip !</p>
+                              <p class="test_quote_text">Lysonvn là một dịch vụ tốt xe ở đây sạch xẽ. Tài xế nhiệt tình,chu đáo và đúng giờ chuyến du lịch của chúng tôi thật tuyệt vời.Cảm ơn Lysonvn !</p>
                            </div>
                         </div>
                      </div>
@@ -316,7 +314,7 @@
                         <div class="test_content_container">
                            <div class="test_content">
                               <div class="test_quote_title">" Annabella "</div>
-                              <p class="test_quote_text">Thanks LySonTrip, I am a foreign visitor but I am very friendly. I will recommend my friends to uses LySonTrip service.</p>
+                              <p class="test_quote_text">Thanks Lysonvn, I am a foreign visitor but I am very friendly. I will recommend my friends to uses Lysonvn service.</p>
                            </div>
                         </div>
                      </div>
@@ -331,7 +329,7 @@
                            <stop offset='100%' stop-color='#8d4fff' />
                         </linearGradient>
                      </defs>
-                     <path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
+                     <path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h20c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
                         M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
                         C22.545,2,26,5.541,26,9.909V23.091z" />
                      <polygon class="nav_arrow" fill="#F3F6F9" points="15.044,22.222 16.377,20.888 12.374,16.885 16.377,12.882 15.044,11.55 9.708,16.885 11.04,18.219
@@ -347,7 +345,7 @@
                            <stop offset='100%' stop-color='#8d4fff' />
                         </linearGradient>
                      </defs>
-                     <path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
+                     <path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h20c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
                         M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
                         C22.545,2,26,5.541,26,9.909V23.091z" />
                      <polygon class="nav_arrow" fill="#F3F6F9" points="13.044,11.551 11.71,12.885 15.714,16.888 11.71,20.891 13.044,22.224 18.379,16.888 17.048,15.554

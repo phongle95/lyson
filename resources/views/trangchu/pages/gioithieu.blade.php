@@ -34,7 +34,7 @@
       </div>
       <div class="row">
          <div class="col-lg-10 offset-lg-1 text-center">
-            <p class="stats_text">Biểu đồ những năm gần đây khách hàng sử dụng dịch vụ của lý sơn trip </p>
+            <p class="stats_text">Biểu đồ những năm gần đây khách hàng sử dụng dịch vụ của Lysonvn </p>
          </div>
       </div>
       <div class="row">
@@ -84,7 +84,7 @@
                      </div>
                      <div class="stats_last_content">
                         <div class="stats_number">145</div>
-                        <div class="stats_type">Đặt Vé Tàu Của Lý Sơn Trip</div>
+                        <div class="stats_type">Đặt Vé Tàu Của Lysonvn</div>
                      </div>
                   </div>
                   <div class="stats_bar order-md-2 order-2" data-x="145" data-y="768" data-color="#a95ce4">
@@ -100,7 +100,7 @@
                      </div>
                      <div class="stats_new_content">
                         <div class="stats_number">768</div>
-                        <div class="stats_type">Đặt Vé Tàu Của Lý Sơn Trip</div>
+                        <div class="stats_type">Đặt Vé Tàu Của Lysonvn</div>
                      </div>
                   </div>
                </div>
@@ -179,7 +179,7 @@
             <!-- Testimonials Slider -->
             <div class="test_slider_container">
                <div class="owl-carousel owl-theme test_slider">
-                  <!-- Testimonial Item -->
+                    <!-- Testimonial Item -->
                   <div class="owl-item">
                      <div class="test_item">
                         <div class="test_image"><img src="travel/images/gs.jpg" alt="travel ly son"></div>
@@ -187,7 +187,7 @@
                         <div class="test_content_container">
                            <div class="test_content">
                               <div class="test_quote_title">" Nguyễn Như Ý "</div>
-                              <p class="test_quote_text">Một người bạn đã giới thiệu tôi đi xe của Lý Sơn Trip.Tôi đã có một chuyến đi vui vẻ với anh tài xế thân thiện , giá tiền phù hợp với tôi</p>
+                              <p class="test_quote_text">Một người bạn đã giới thiệu tôi đi xe của Lysonvn.Tôi đã có một chuyến đi vui vẻ với anh tài xế thân thiện , giá tiền phù hợp với tôi</p>
                            </div>
                         </div>
                      </div>
@@ -200,7 +200,7 @@
                         <div class="test_content_container">
                            <div class="test_content">
                               <div class="test_quote_title">" Nguyễn Thành Trung "</div>
-                              <p class="test_quote_text">Lý Sơn Trip là một dịch vụ tốt xe ở đây sạch xẽ. Tài xế nhiệt tình,chu đáo và đúng giờ chuyến du lịch của chúng tôi thật tuyệt vời.Cảm ơn Lý Sơn Trip !</p>
+                              <p class="test_quote_text">Lysonvn là một dịch vụ tốt xe ở đây sạch xẽ. Tài xế nhiệt tình,chu đáo và đúng giờ chuyến du lịch của chúng tôi thật tuyệt vời.Cảm ơn Lysonvn !</p>
                            </div>
                         </div>
                      </div>
@@ -213,7 +213,7 @@
                         <div class="test_content_container">
                            <div class="test_content">
                               <div class="test_quote_title">" Annabella "</div>
-                              <p class="test_quote_text">Thanks LySonTrip, I am a foreign visitor but I am very friendly. I will recommend my friends to uses LySonTrip service.</p>
+                              <p class="test_quote_text">Thanks Lysonvn, I am a foreign visitor but I am very friendly. I will recommend my friends to uses Lysonvn service.</p>
                            </div>
                         </div>
                      </div>
