@@ -15,7 +15,7 @@
             <div class="blog_post_container">
                <!-- Blog Post -->
                <div class="blog_post">
-                  <h3 style="text-align:left;font-weight: 700;color:black">Tên Hotel : {{ $chitiet->tenHotel }}</h3>
+                  <h1 style="font-family: Times, serif;color:black; font-size: 300%;font-weight:700;">Tên Hotel : {{ $chitiet->tenHotel }}</h1>
                   <br>
                   <div class="fb-like" data-href="{{ route('trangchu.chitiet.hotel',['slug'=>str_slug($chitiet->tenHotel),'id'=>$chitiet->id]) }}" data-layout="standard"
                      data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>

@@ -8,6 +8,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     @yield('meta')
+        <!-- Structure data -->
+        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@type": "Organization",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Việt Nam",
+                    "addressRegion": "TP Đà Nẵng",
+                    "streetAddress": "121 Cù Chính Lan, Thành Phố Đà Nẵng"
+                },
+                "description": "lysonvn là kênh thông tin online hổ trợ đặt tour , đặt phòng khách sạn cho thuê xe giá rẻ khi đi du lịch lý sơn , đà nẵng , hội an , huế và nhận đặt vé tàu khi đi lý sơn",
+                "name": "Lysonvn",
+                "telephone": "0944224455"
+            }
+            </script>
+            <script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@type": "WebSite",
+                "name": "Lysonvn",
+                "url": "https://lysonvn.com",
+                "sameAs": ["https://www.facebook.com/hoangphuc.car.quangngai"]
+            }
+            </script>
+
 
     <link rel="icon" type="image/x-icon" href="travel/images/logo.png">
 

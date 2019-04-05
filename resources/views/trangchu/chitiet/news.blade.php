@@ -27,7 +27,7 @@
                      data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
                </div>
                <div class="blog_post">
-                  <h3 style="text-align:left;font-weight: 700;color:black">Tiêu Đề : {{ $chitiet->tieuDe }}</h3>
+                  <h1 style="font-family: Times, serif;color:black; font-size: 300%;font-weight:700;">{{ $chitiet->tieuDe }}</h1>
                   <div class="blog_post_text">
                      {!! $chitiet->noiDung !!}
                   </div>

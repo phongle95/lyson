@@ -9,7 +9,7 @@
             <div class="home_slider_background" style="background-image:url(travel/images/lyson1.jpg);background-image:alt('lý sơn')"></div>
             <div class="home_slider_content text-center">
                <div class="home_slider_content_inner" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
-                  {{--  <h1 style="font-family: Times, serif;">Lý Sơn</h1>  --}}
+                   <h2 style="font-family: Times, serif;color:white; font-size: 500%;font-weight:700">Du Lịch</h2>
                   <div class="button home_slider_button">
                      <div class="button_bcg"></div>
                      <a href="{{ route('trangchu.pages.tintuc') }}">Chi Tiết<span></span><span></span><span></span></a>
@@ -22,7 +22,7 @@
             <div class="home_slider_background" style="background-image:url(travel/images/chualyson.jpg);background-image:alt(lý sơn)"></div>
             <div class="home_slider_content text-center">
                <div class="home_slider_content_inner" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
-
+                    <h2 style="font-family: Times, serif;color:white; font-size: 500%;font-weight:700">Lý Sơn</h2>
                   <div class="button home_slider_button">
                      <div class="button_bcg"></div>
                      <a href="{{ route('trangchu.pages.tintuc') }}">Chi Tiết<span></span><span></span><span></span></a>
@@ -133,7 +133,7 @@
                      <a href="{{ route('trangchu.chitiet.travel',['slug'=>str_slug($item->tenTour),'id'=>$item->id]) }}">Chi Tiết<span></span><span></span><span></span></a>
                   </div>
                   <div class="intro_center text-center">
-                     <h3>{{ $item->tenTour }}</h3>
+                     <h3 style="font-family: Times, serif;color:white; font-size: 300%;font-weight:700">{{ $item->tenTour }}</h3>
                      <div class="intro_price">Giá : {{ number_format($item->gia) }}vnđ</div>
                      <div class="rating rating_4">
                         <i class="fa fa-star"></i>
@@ -283,8 +283,8 @@
                    <!-- Testimonial Item -->
                   <div class="owl-item">
                      <div class="test_item">
-                        <div class="test_image"><img src="travel/images/gs.jpg" alt="travel ly son"></div>
-                        <div class="test_icon"><img src="travel/images/backpack.png" alt=""></div>
+                        <div class="test_image"><img src="travel/images/gs.jpg" alt="du lịch lý sơn"></div>
+                        <div class="test_icon"><img src="travel/images/backpack.png" alt="du lịch lý sơn"></div>
                         <div class="test_content_container">
                            <div class="test_content">
                               <div class="test_quote_title">" Nguyễn Như Ý "</div>
@@ -297,7 +297,7 @@
                   <div class="owl-item">
                      <div class="test_item">
                         <div class="test_image"><img src="travel/images/trung.jpg" alt="https://unsplash.com/@tschax"></div>
-                        <div class="test_icon"><img src="travel/images/island_t.png" alt=""></div>
+                        <div class="test_icon"><img src="travel/images/island_t.png" alt="du lịch lý sơn"></div>
                         <div class="test_content_container">
                            <div class="test_content">
                               <div class="test_quote_title">" Nguyễn Thành Trung "</div>
@@ -310,7 +310,7 @@
                   <div class="owl-item">
                      <div class="test_item">
                         <div class="test_image"><img src="travel/images/test_3.jpg" alt="https://unsplash.com/@seefromthesky"></div>
-                        <div class="test_icon"><img src="travel/images/kayak.png" alt=""></div>
+                        <div class="test_icon"><img src="travel/images/kayak.png" alt="du lịch lý sơn"></div>
                         <div class="test_content_container">
                            <div class="test_content">
                               <div class="test_quote_title">" Annabella "</div>
@@ -413,14 +413,14 @@
 @endsection @section('meta')
 <title>Du Lịch Lý Sơn - Thuê Xe Đà Nẵng - Khách Sạn Lý Sơn</title>
 <meta name="keywords" content="du lịch lý sơn ,tour lý sơn,du lịch lý sơn giá rẻ,du lịch quảng ngãi lý sơn,du lịch đà nẵng lý sơn , du lịch hội an lý sơn" />
-<meta name="description" content='du lịch lý sơn chuyên tổ chức các tour du lịch lý sơn , đà nẵng , hội an , huế ' />
+<meta name="description" content='lysonvn là kênh thông tin online hổ trợ đặt tour , đặt phòng khách sạn cho thuê xe giá rẻ khi đi du lịch lý sơn , đà nẵng , hội an , huế và nhận đặt vé tàu khi đi lý sơn ' />
 <!--meta facebook-->
 <meta property="og:title" content="Du Lịch Lý Sơn - Tour Lý Sơn - Thuê Xe Đà Nẵng" />
-<meta property="og:description" content="du lịch lý sơn chuyên tổ chức các tour du lịch lý sơn , đà nẵng , hội an , huế và cho thuê xe du lịch" />
+<meta property="og:description" content="lysonvn là kênh thông tin online hổ trợ đặt tour , đặt phòng khách sạn cho thuê xe giá rẻ khi đi du lịch lý sơn , đà nẵng , hội an , huế và nhận đặt vé tàu khi đi lý sơn" />
 <meta property="og:image" content="travel/images/dulich.jpg" />
 <!--meta google-->
 <meta itemprop="name" content="du lịch lý sơn chuyên tổ chức các tour du lịch lý sơn , đà nẵng , hội an , huế và cho thuê xe du lịch" />
-<meta itemprop="description" content="du lịch lý sơn chuyên tổ chức các tour du lịch lý sơn , đà nẵng , hội an , huế và cho thuê xe du lịch" />
+<meta itemprop="description" content="lysonvn là kênh thông tin online hổ trợ đặt tour , đặt phòng khách sạn cho thuê xe giá rẻ khi đi du lịch lý sơn , đà nẵng , hội an , huế và nhận đặt vé tàu khi đi lý sơn" />
 <meta itemprop="image" content="travel/images/dulich.jpg" />
 <meta name="og:url" content="{{ route('trangchu.pages.trangchu') }}" />
 @endsection
