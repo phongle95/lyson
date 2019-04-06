@@ -18,7 +18,7 @@
                   Thông Báo :   {{ Session::get('thongbao') }}
                </div>
                @endif
-               <div class="contact_title text-center">Liên Hệ Ngay</div>
+               <h2 class="contact_title text-center">Liên Hệ Ngay</h2>
                <form action="{{ route('front.fb') }}" method="POST" id="contact_form" class="contact_form text-center">
                   <input type="hidden" name="_token" value="{{ csrf_token() }}"/>
                   <input name="name" type="text" id="contact_form_name" class="contact_form_name input_field" placeholder="Name" required="required" data-error="Name is required.">
@@ -46,9 +46,9 @@
             <!-- About - Content -->
             <div class="about_content">
                <div class="logo_container about_logo">
-                  <div class="logo"><a href="#"><img src="travel/images/logo.png" alt="">Lý Sơn</a></div>
+                  <h1 class="logo"><a href="#"><img src="travel/images/logo.png" alt="logo">Lý Sơn</a></h1>
                </div>
-               <p class="about_text">Kênh thông tin online, hỗ trợ đặt tour, đặt phòng khách sạn cho thuê xe giá rẻ khi đi du lịch Lý Sơn.</p>
+               <h3 class="about_text">Kênh thông tin online, hỗ trợ đặt tour, đặt phòng khách sạn cho thuê xe giá rẻ khi đi du lịch Lý Sơn.</h3>
                <ul class="about_social_list">
                   <li class="about_social_item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
                   <li class="about_social_item"><a href="#"><i class="fa fa-facebook-f"></i></a></li>
@@ -64,25 +64,25 @@
                <ul class="contact_info_list">
                   <li class="contact_info_item d-flex flex-row">
                      <div>
-                        <div class="contact_info_icon"><img src="travel/images/placeholder.svg" alt=""></div>
+                        <div class="contact_info_icon"><img src="travel/images/placeholder.svg" alt="icon"></div>
                      </div>
                      <div class="contact_info_text">Thành Phố : Đà Nẵng</div>
                   </li>
                   <li class="contact_info_item d-flex flex-row">
                      <div>
-                        <div class="contact_info_icon"><img src="travel/images/phone-call.svg" alt=""></div>
+                        <div class="contact_info_icon"><img src="travel/images/phone-call.svg" alt="icon"></div>
                      </div>
                      <div class="contact_info_text">0944-22-44-55</div>
                   </li>
                   <li class="contact_info_item d-flex flex-row">
                      <div>
-                        <div class="contact_info_icon"><img src="travel/images/message.svg" alt=""></div>
+                        <div class="contact_info_icon"><img src="travel/images/message.svg" alt="icon"></div>
                      </div>
                      <div class="contact_info_text"><a href="mailto:lysonqnvn@gmail.com?Subject=Hello ly son" target="_top">lysonqnvn@gmail.com</a></div>
                   </li>
                   <li class="contact_info_item d-flex flex-row">
                      <div>
-                        <div class="contact_info_icon"><img src="travel/images/planet-earth.svg" alt=""></div>
+                        <div class="contact_info_icon"><img src="travel/images/planet-earth.svg" alt="icon"></div>
                      </div>
                      <div class="contact_info_text"><a href="http://lysonvn.com/">lysonvn.com</a></div>
                   </li>

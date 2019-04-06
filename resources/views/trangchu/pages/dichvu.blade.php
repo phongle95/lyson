@@ -35,7 +35,7 @@
    <div class="container">
       <div class="row">
          <div class="col">
-            <h2 class="intro_title text-center">Tour Du Lịch Hot</h2>
+            <h1 class="intro_title text-center">Du Lịch Lý Sơn</h1>
          </div>
       </div>
       <div class="row">
@@ -60,7 +60,7 @@
                      <a href="{{ route('trangchu.chitiet.travel',['slug'=>str_slug($item->tenTour),'id'=>$item->id]) }}">Chi Tiết<span></span><span></span><span></span></a>
                   </div>
                   <div class="intro_center text-center">
-                     <h1>{{ $item->tenTour }}</h1>
+                     <h3  style="font-family: Times, serif;color:white; font-size: 300%;font-weight:700">{{ $item->tenTour }}</h3>
                      <div class="intro_price">Giá : {{ number_format($item->gia) }}vnđ</div>
                      <div class="rating rating_4">
                         <i class="fa fa-star"></i>
@@ -95,9 +95,9 @@
                   <!-- Testimonial Item -->
                   <div class="owl-item">
                      <div class="test_item" style="height:500px">
-                        <div class="test_image"><img src="/{{ str_replace('\\','/',$item->img) }}" alt="https://unsplash.com/@anniegray"></div>
+                        <div class="test_image"><img src="/{{ str_replace('\\','/',$item->img) }}" alt="thue xe o to"></div>
                         <a href="{{ route('trangchu.chitiet.car',['slug'=>str_slug($item->todo),'id'=>$item->id]) }}">
-                           <div class="test_icon"><img src="https://img.icons8.com/dotty/48/000000/convertible.png"></div>
+                           <div class="test_icon"><img src="https://img.icons8.com/dotty/48/000000/convertible.png" alt="icon"></div>
                         </a>
                         <div class="test_content_container">
                            <div class="test_content">
@@ -183,10 +183,10 @@
                         <p class="offers_text">{{ $item->tomTat }}.</p>
                         <div class="offers_icons">
                            <ul class="offers_icons_list">
-                              <li class="offers_icons_item"><img src="travel/images/post.png" alt=""></li>
-                              <li class="offers_icons_item"><img src="travel/images/compass.png" alt=""></li>
-                              <li class="offers_icons_item"><img src="travel/images/bicycle.png" alt=""></li>
-                              <li class="offers_icons_item"><img src="travel/images/sailboat.png" alt=""></li>
+                              <li class="offers_icons_item"><img src="travel/images/post.png" alt="ly son"></li>
+                              <li class="offers_icons_item"><img src="travel/images/compass.png" alt="ly son"></li>
+                              <li class="offers_icons_item"><img src="travel/images/bicycle.png" alt="ly son"></li>
+                              <li class="offers_icons_item"><img src="travel/images/sailboat.png" alt="ly son"></li>
                            </ul>
                         </div>
                         <div class="offers_link"><a href="{{ route('trangchu.chitiet.travel',['slug'=>str_slug($item->tenTour),'id'=>$item->id]) }}">chi tiết</a></div>

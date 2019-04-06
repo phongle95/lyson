@@ -15,7 +15,7 @@
          </div>
          <div class="col-lg-5">
             <div class="intro_content">
-               <div class="intro_title">Giới Thiệu Về Travel Lý Sơn</div>
+               <h1 class="intro_title">Giới Thiệu Về Du Lịch Lý Sơn</h1>
                <p class="intro_text">Lời đầu tiên chúng tôi xin cảm ơn quý khách đã tin tưởng và ủng hộ dịch vụ của chúng tôi. Chúng tôi hy vọng dịch vụ của chúng tôi có thể nhận được sự ủng hộ của tất cả mọi người đặc biệt là khách du lịch trên toàn quốc.<br><br>Chúng tôi tự tin cung cấp những dòng xe mới, không hư hỏng với giá thuê đảm bảo cạnh tranh và rẻ hơn so với thị trường. Ngoài ra chúng tôi
                   còn cung cấp những tour du lịch Lý Sơn 2 ngày 1 đêm, 3 ngày 2 đêm giá rẻ thời gian thoải mái để tiện phục vụ quý khách. Mọi chi tiết xin liên hệ hot line: 1800 0079 (miễn phí).
                </p>
@@ -29,7 +29,7 @@
    <div class="container">
       <div class="row">
          <div class="col text-center">
-            <div class="section_title">Biểu đồ khách sử dụng dịch vụ</div>
+            <h3 class="section_title">Biểu đồ khách sử dụng dịch vụ</h3>
          </div>
       </div>
       <div class="row">
@@ -52,7 +52,7 @@
                <div class="stats_item d-flex flex-md-row flex-column clearfix">
                   <div class="stats_last order-md-1 order-3">
                      <div class="stats_last_icon d-flex flex-column align-items-center justify-content-end">
-                        <img src="travel/images/stats_1.png" alt="">
+                        <img src="travel/images/stats_1.png" alt="icon">
                      </div>
                      <div class="stats_last_content">
                         <div class="stats_number">642</div>
@@ -68,7 +68,7 @@
                   </div>
                   <div class="stats_new order-md-3 order-1 text-right">
                      <div class="stats_new_icon d-flex flex-column align-items-center justify-content-end">
-                        <img src="travel/images/stats_1.png" alt="">
+                        <img src="travel/images/stats_1.png" alt="icon">
                      </div>
                      <div class="stats_new_content">
                         <div class="stats_number">3527</div>
@@ -80,7 +80,7 @@
                <div class="stats_item d-flex flex-md-row flex-column clearfix">
                   <div class="stats_last order-md-1 order-3">
                      <div class="stats_last_icon d-flex flex-column align-items-center justify-content-end">
-                        <img src="travel/images/stats_2.png" alt="">
+                        <img src="travel/images/stats_2.png" alt="icon">
                      </div>
                      <div class="stats_last_content">
                         <div class="stats_number">145</div>
@@ -108,7 +108,7 @@
                <div class="stats_item d-flex flex-md-row flex-column clearfix">
                   <div class="stats_last order-md-1 order-3">
                      <div class="stats_last_icon d-flex flex-column align-items-center justify-content-end">
-                        <img src="travel/images/stats_3.png" alt="">
+                        <img src="travel/images/stats_3.png" alt="icon">
                      </div>
                      <div class="stats_last_content">
                         <div class="stats_number">1546</div>
@@ -124,7 +124,7 @@
                   </div>
                   <div class="stats_new order-md-3 order-1 text-right">
                      <div class="stats_new_icon d-flex flex-column align-items-center justify-content-end">
-                        <img src="travel/images/stats_3.png" alt="">
+                        <img src="travel/images/stats_3.png" alt="icon">
                      </div>
                      <div class="stats_new_content">
                         <div class="stats_number">9321</div>
@@ -136,7 +136,7 @@
                <div class="stats_item d-flex flex-md-row flex-column clearfix">
                   <div class="stats_last order-md-1 order-3">
                      <div class="stats_last_icon d-flex flex-column align-items-center justify-content-end">
-                        <img src="travel/images/stats_4.png" alt="">
+                        <img src="travel/images/stats_4.png" alt="icon">
                      </div>
                      <div class="stats_last_content">
                         <div class="stats_number">3729</div>
@@ -152,7 +152,7 @@
                   </div>
                   <div class="stats_new order-md-3 order-1 text-right">
                      <div class="stats_new_icon d-flex flex-column align-items-center justify-content-end">
-                        <img src="travel/images/stats_4.png" alt="">
+                        <img src="travel/images/stats_4.png" alt="icon">
                      </div>
                      <div class="stats_new_content">
                         <div class="stats_number">17429</div>
@@ -183,7 +183,7 @@
                   <div class="owl-item">
                      <div class="test_item">
                         <div class="test_image"><img src="travel/images/gs.jpg" alt="travel ly son"></div>
-                        <div class="test_icon"><img src="travel/images/backpack.png" alt=""></div>
+                        <div class="test_icon"><img src="travel/images/backpack.png" alt="icon"></div>
                         <div class="test_content_container">
                            <div class="test_content">
                               <div class="test_quote_title">" Nguyễn Như Ý "</div>
@@ -195,8 +195,8 @@
                   <!-- Testimonial Item -->
                   <div class="owl-item">
                      <div class="test_item">
-                        <div class="test_image"><img src="travel/images/trung.jpg" alt="https://unsplash.com/@tschax"></div>
-                        <div class="test_icon"><img src="travel/images/island_t.png" alt=""></div>
+                        <div class="test_image"><img src="travel/images/trung.jpg" alt="ly son"></div>
+                        <div class="test_icon"><img src="travel/images/island_t.png" alt="icon"></div>
                         <div class="test_content_container">
                            <div class="test_content">
                               <div class="test_quote_title">" Nguyễn Thành Trung "</div>
@@ -208,8 +208,8 @@
                   <!-- Testimonial Item -->
                   <div class="owl-item">
                      <div class="test_item">
-                        <div class="test_image"><img src="travel/images/test_3.jpg" alt="https://unsplash.com/@seefromthesky"></div>
-                        <div class="test_icon"><img src="travel/images/kayak.png" alt=""></div>
+                        <div class="test_image"><img src="travel/images/test_3.jpg" alt="ly son"></div>
+                        <div class="test_icon"><img src="travel/images/kayak.png" alt="icon"></div>
                         <div class="test_content_container">
                            <div class="test_content">
                               <div class="test_quote_title">" Annabella "</div>
