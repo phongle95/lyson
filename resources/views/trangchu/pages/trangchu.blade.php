@@ -109,12 +109,14 @@
       <div class="row">
          <div class="col">
             <h1 class="intro_title text-center">Du Lịch Lý Sơn</h1>
+            <p style="font-family: Times, serif;color:black;font-weight:540;text-align:center;font-size:130%">Lý Sơn là một huyện đảo của tỉnh Quảng Ngãi, nằm cách Cảng Sa Kỳ khoảng 30km. Vì thế để di chuyển đến đảo Lý Sơn, các bạn cần phải di chuyển ra cảng Sa Kỳ rồi sau đó bắt tàu Super biển đông để đi ra đảo Lý Sơn</p>
          </div>
       </div>
       <div class="row">
          <div class="col-lg-10 offset-lg-1">
             <div class="intro_text text-center">
-               <p>Đây là những tour khuyến mãi tốt nhất của chúng tôi</p>
+                    <div class="cta_title">Đây là những tour khuyến mãi của chúng tôi</div><br>
+
             </div>
          </div>
       </div>
@@ -125,7 +127,7 @@
             <div class="intro_item">
                <div class="intro_item_overlay"></div>
                <!-- Image by https://unsplash.com/@dnevozhai -->
-               <div class="intro_item_background" style="background-image:url(/{{ str_replace('\\','/',$item->img) }});background-image:alt('lý sơn')"></div>
+            <div class="intro_item_background" style="background-image:url(/{{ str_replace('\\','/',$item->img) }})"></div>
                <div class="intro_item_content d-flex flex-column align-items-center justify-content-center">
                   <div class="intro_date">ngày {{ date("d-m-Y", strtotime($item->date)) }}</div>
                   <div class="button intro_button">
@@ -164,6 +166,8 @@
                   <!-- CTA Slider Item -->
                   <div class="owl-item cta_item text-center">
                      <div class="cta_title">Các thông tin bổ ích trước và trong khi đi du lịch đảo Lý Sơn</div>
+                     <p style="font-family: Times, serif;color:black;font-weight:540;text-align:center;font-size:130%">Du lịch Lý Sơn chưa bao giờ là khó khăn</p>
+                     <img style="height:350px" src="/{{ str_replace('\\','/',$item->img) }}" alt="ly son"><br>
                      <div class="rating_r rating_r_4">
                         <i></i>
                         <i></i>
@@ -222,6 +226,7 @@
       <div class="row">
          <div class="col text-center">
             <h2 class="section_title">Các tour du lịch của chúng tôi</h2>
+            <p style="font-family: Times, serif;color:black;font-weight:540;text-align:center;font-size:130%">Nếu quý khách đặt tour online của Lysonvn quý khách sẽ được giảm giá và có cơ hội nhận được nhiều phần quà hấp dẫn</p>
          </div>
       </div>
       <div class="row offers_items">
@@ -233,7 +238,7 @@
                   <div class="col-lg-6">
                      <div class="offers_image_container">
                         <!-- Image by https://unsplash.com/@kensuarez -->
-                        <div class="offers_image_background" style="background-image:url(/{{ str_replace('\\','/',$item->img) }})"></div>
+                        <a href="{{ route('trangchu.chitiet.travel',['slug'=>str_slug($item->tenTour),'id'=>$item->id]) }}"><div class="offers_image_background" style="background-image:url(/{{ str_replace('\\','/',$item->img) }})"></div></a>
                         <div class="offer_name"><a href="{{ route('trangchu.chitiet.travel',['slug'=>str_slug($item->tenTour),'id'=>$item->id]) }}">{{ $item->tenTour }}</a></div>
                      </div>
                   </div>
