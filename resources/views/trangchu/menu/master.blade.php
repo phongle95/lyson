@@ -213,7 +213,7 @@
 
                                 <!-- Footer blog item -->
                                 <div class="footer_blog_item clearfix">
-                                    <div class="footer_blog_image"><img src="/{{ str_replace('\\','/',$item->img) }}" alt="du lịch lý sơn"></div>
+                                    {{-- <div class="footer_blog_image"><img src="/upload{{ $item->img }}" alt="du lịch lý sơn"></div> --}}
                                     <div class="footer_blog_content">
                                         <div class="footer_blog_title"><a href="{{ route('trangchu.chitiet.news',['slug'=>str_slug($item->tieuDe),'id'=>$item->id]) }}">{{ $item->tieuDe }}</a></div>
                                         <div class="footer_blog_date">{{ date("d-m-Y", strtotime($item->date)) }}</div>

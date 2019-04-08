@@ -16,7 +16,7 @@
                     @foreach ($tin as $item)
                     <div class="blog_post">
                         <div class="blog_post_image">
-                            <a href="{{ route('trangchu.chitiet.news',['slug'=>str_slug($item->tieuDe),'id'=>$item->id]) }}"><img class="custom-img" src="/{{ str_replace('\\','/',$item->img) }}" alt="du lịch lý sơn"></a>
+                            <a href="{{ route('trangchu.chitiet.news',['slug'=>str_slug($item->tieuDe),'id'=>$item->id]) }}"><img class="custom-img" src="/upload/{{ $item->img }}" alt="du lịch lý sơn"></a>
                             <div class="blog_post_date d-flex flex-column align-items-center justify-content-center">
                                 <div class="blog_post_day">{{ $item->id }}</div>
                                 <div class="blog_post_month">{{ date("d-m-Y", strtotime($item->date)) }}</div>

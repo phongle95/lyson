@@ -62,7 +62,7 @@
             <div class="intro_item">
                <div class="intro_item_overlay"></div>
                <!-- Image by https://unsplash.com/@dnevozhai -->
-               <div class="intro_item_background" style="background-image:url(/{{ str_replace('\\','/',$item->img) }})"></div>
+               <div class="intro_item_background" style="background-image:url(/upload/{{ $item->img }})"></div>
                <div class="intro_item_content d-flex flex-column align-items-center justify-content-center">
                   <div class="intro_date">ngày {{ date("d-m-Y", strtotime($item->date)) }}</div>
                   <div class="button intro_button">
@@ -106,7 +106,7 @@
                         <div class="owl-item">
                             <div class="test_item" style="height:500px">
                                 <a href="{{ route('trangchu.chitiet.car',['slug'=>str_slug($item->todo),'id'=>$item->id]) }}">
-                                    <div class="test_image"><img src="/{{ str_replace('\\','/',$item->img) }}" alt="thue xe o to"></div>
+                                    <div class="test_image"><img src="/upload/{{ $item->img }}" alt="thue xe o to"></div>
                                 </a>
                                 <a href="{{ route('trangchu.chitiet.car',['slug'=>str_slug($item->todo),'id'=>$item->id]) }}">
                                     <div class="test_icon"><img src="https://img.icons8.com/dotty/48/000000/convertible.png" alt="icon"></div>
@@ -179,7 +179,7 @@
                   <div class="col-lg-6">
                      <div class="offers_image_container">
                         <!-- Image by https://unsplash.com/@kensuarez -->
-                        <a href="{{ route('trangchu.chitiet.travel',['slug'=>str_slug($item->tenTour),'id'=>$item->id]) }}"><div class="offers_image_background" style="background-image:url(/{{ str_replace('\\','/',$item->img) }})"></div></a>
+                        <a href="{{ route('trangchu.chitiet.travel',['slug'=>str_slug($item->tenTour),'id'=>$item->id]) }}"><div class="offers_image_background" style="background-image:url(/upload/{{ $item->img }})"></div></a>
                         <div class="offer_name"><a href="{{ route('trangchu.chitiet.travel',['slug'=>str_slug($item->tenTour),'id'=>$item->id]) }}">{{ $item->tenTour }}</a></div>
                      </div>
                   </div>
@@ -224,7 +224,7 @@
          <!-- Trending Item -->
          <div class="col-lg-3 col-sm-6">
             <div class="trending_item clearfix">
-               <div class="trending_image"><img style="height:100px;" src="/{{ str_replace('\\','/',$item->img) }}" alt="khách sạn lý sơn"></div>
+               <div class="trending_image"><img style="height:100px;" src="/upload/{{ $item->img }}" alt="khách sạn lý sơn"></div>
                <div class="trending_content">
                   <div class="trending_title"><a href="{{ route('trangchu.chitiet.hotel',['slug'=>str_slug($item->tenHotel),'id'=>$item->id]) }}">{{ $item->tenHotel }}</a></div>
                   <div class="trending_price">From {{ number_format($item->gia) }}.vnđ</div>

@@ -87,9 +87,8 @@ class AdminController extends Controller
 
 
         if ($file !="") {
-            $img =  $file->move('upload', str_random(4)."_". $file->getClientOriginalName());
-            $name = str_replace('\\','/',$img);
-            $tin->img=$name;
+            $img = $file->store("/", ['disk'=>'upload']);
+            $tin->img=$img;
         }
         else{
             $tin->img="defau.png";
@@ -118,9 +117,8 @@ class AdminController extends Controller
 
         $file = $request->file('img');
         if ($file !="") {
-            $img =  $file->move('upload', str_random(4)."_".$file->getClientOriginalName());
-            $name = str_replace('\\','/',public_path());
-            unlink($name.'/'.$tin->img);
+            $img = $file->store("/", ['disk'=>'upload']);
+            // unlink(public_path()."/upload/".$tin->img);
             $tin->img=$img;
         }
         $tin->save();
@@ -158,9 +156,8 @@ class AdminController extends Controller
         $file = $request->file('img');
 
         if ($file !="") {
-            $img =  $file->move('upload', str_random(4)."_". $file->getClientOriginalName());
-            $name = str_replace('\\','/',$img);
-            $travel->img=$name;
+            $img = $file->store("/", ['disk'=>'upload']);
+            $travel->img=$img;
         }
         else{
             $travel->img="defau.png";
@@ -188,9 +185,8 @@ class AdminController extends Controller
         $file = $request->file('img');
 
         if ($file !="") {
-            $img =  $file->move('upload', str_random(4)."_". $file->getClientOriginalName());
-            $name = str_replace('\\','/',public_path());
-            unlink($name.'/'.$travel->img);
+            $img = $file->store("/", ['disk'=>'upload']);
+            // unlink(public_path()."/upload/".$travel->img);
             $travel->img=$img;
         }
         $travel->save();
@@ -228,9 +224,8 @@ class AdminController extends Controller
         $file = $request->file('img');
 
         if ($file !="") {
-            $img = $file->move('upload', str_random(4)."_". $file->getClientOriginalName());
-            $name = str_replace('\\','/',$img);
-            $hotel->img=$name;
+            $img = $file->store("/", ['disk'=>'upload']);
+            $hotel->img=$img;
         }
         else{
             $hotel->img="defau.png";
@@ -257,9 +252,8 @@ class AdminController extends Controller
         $file = $request->file('img');
 
         if ($file !="") {
-            $img = $file->move('upload', str_random(4)."_". $file->getClientOriginalName());
-            $name = str_replace('\\','/',public_path());
-            unlink($name.'/'.$hotel->img);
+            $img = $file->store("/", ['disk'=>'upload']);
+            // unlink(public_path()."/upload/".$hotel->img);
             $hotel->img=$img;
         }
 
@@ -293,9 +287,8 @@ class AdminController extends Controller
         $file = $request->file('img');
 
         if ($file !="") {
-            $img = $file->move('upload', str_random(4)."_". $file->getClientOriginalName());
-            $name = str_replace('\\','/',$img);
-            $car->img=$name;
+            $img = $file->store("/", ['disk'=>'upload']);
+            $car->img=$img;
         }
         else{
             $car->img="defau.png";
@@ -319,9 +312,8 @@ class AdminController extends Controller
         $file = $request->file('img');
 
         if ($file !="") {
-            $img = $file->move('upload', str_random(4)."_". $file->getClientOriginalName());
-            $name = str_replace('\\','/',public_path());
-            unlink($name.'/'.$car->img);
+            $img = $file->store("/", ['disk'=>'upload']);
+            // unlink(public_path()."/upload/".$car->img);
             $car->img=$img;
         }
 

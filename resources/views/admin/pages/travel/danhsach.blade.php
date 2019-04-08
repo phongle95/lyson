@@ -40,7 +40,7 @@
                         <tr class="tr-shadow">
                            <td>{{ $tour->tenTour }}</td>
                            <td>
-                              <img style="height:150px;width:150px" src="\{{ $tour->img }}" alt="travel lý sơn"/>
+                              <img style="height:150px;width:150px" src="/upload/{{ $tour->img }}" alt="travel lý sơn"/>
                            </td>
                            <td style="text-align:left;font-weight: 600;color:red">
                               {{ number_format($tour->gia) }}.vnđ

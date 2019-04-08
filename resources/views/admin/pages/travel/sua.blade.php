@@ -56,7 +56,7 @@
                   </div>
                   <div class="col-12 col-md-6">
                      <label class="badge badge-info">Hình Củ</label><br>
-                     <img src="\{{ $travel->img }}" width="200px" height="150px" alt="salme">
+                     <img src="/upload/{{ $travel->img }}" width="200px" height="150px" alt="salme">
                   </div>
                </div>
                <div class="row form-group">

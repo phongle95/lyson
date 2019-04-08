@@ -40,7 +40,7 @@
                         <tr class="tr-shadow">
                            <td>{{ $new->tieuDe }}</td>
                            <td>
-                              <img style="height:150px;width:150px" src="\{{ $new->img }}" alt="lý sơn"/>
+                              <img style="height:150px;width:150px" src="/upload/{{ $new->img }}" alt="lý sơn"/>
                            </td>
                            <td>{{ $new->maLoaiTin }}</td>
                            <td>

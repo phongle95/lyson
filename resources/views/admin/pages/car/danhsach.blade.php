@@ -39,7 +39,7 @@
                         <tr class="tr-shadow">
                            <td>{{ $xe->todo }}</td>
                            <td>
-                              <img style="height:150px;width:150px" src="\{{ $xe->img }}" alt="travel lý sơn"/>
+                              <img style="height:150px;width:150px" src="/upload/{{ $xe->img }}" alt="travel lý sơn"/>
                            </td>
                            <td>
                               <a href="{{ route('admin.pages.car.sua',$xe->id) }}" class="btn btn-outline-success btn-fw"> Sửa</a>

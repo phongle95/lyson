@@ -40,7 +40,7 @@
                         <tr class="tr-shadow">
                            <td>{{ $ht->tenHotel }}</td>
                            <td>
-                              <img style="height:150px;width:150px" src="\{{ $ht->img }}" alt="travel lý sơn"/>
+                              <img style="height:150px;width:150px" src="/upload/{{ $ht->img }}" alt="travel lý sơn"/>
                            </td>
                            <td style="text-align:left;font-weight: 600;color:red">
                               {{number_format($ht->gia) }}.đ
