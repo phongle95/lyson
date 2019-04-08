@@ -2,7 +2,7 @@
 @section('noidung')
 <!-- Home -->
 <div class="home1">
-   <div class="home_background1 parallax-window" data-parallax="scroll" data-image-src="travel/images/about_background.jpg"></div>
+   <div class="home_background1 parallax-window" data-parallax="scroll" data-image-src="travel/images/gioithieu.jpg"></div>
    <div class="home_content1">
    </div>
 </div>
@@ -184,8 +184,8 @@
                      <div class="test_item">
                         <div class="test_image"><img src="travel/images/gs.jpg" alt="travel ly son"></div>
                         <div class="test_icon"><img src="travel/images/backpack.png" alt="icon"></div>
-                        <div class="test_content_container">
-                           <div class="test_content">
+                        <div class="test_content_container1">
+                           <div class="test_content1">
                               <div class="test_quote_title">" Nguyễn Như Ý "</div>
                               <p class="test_quote_text">Một người bạn đã giới thiệu tôi đi xe của Lysonvn.Tôi đã có một chuyến đi vui vẻ với anh tài xế thân thiện , giá tiền phù hợp với tôi</p>
                            </div>
@@ -197,8 +197,8 @@
                      <div class="test_item">
                         <div class="test_image"><img src="travel/images/trung.jpg" alt="ly son"></div>
                         <div class="test_icon"><img src="travel/images/island_t.png" alt="icon"></div>
-                        <div class="test_content_container">
-                           <div class="test_content">
+                        <div class="test_content_container1">
+                           <div class="test_content1">
                               <div class="test_quote_title">" Nguyễn Thành Trung "</div>
                               <p class="test_quote_text">Lysonvn là một dịch vụ tốt xe ở đây sạch xẽ. Tài xế nhiệt tình,chu đáo và đúng giờ chuyến du lịch của chúng tôi thật tuyệt vời.Cảm ơn Lysonvn !</p>
                            </div>
@@ -210,8 +210,8 @@
                      <div class="test_item">
                         <div class="test_image"><img src="travel/images/test_3.jpg" alt="ly son"></div>
                         <div class="test_icon"><img src="travel/images/kayak.png" alt="icon"></div>
-                        <div class="test_content_container">
-                           <div class="test_content">
+                        <div class="test_content_container1">
+                           <div class="test_content1">
                               <div class="test_quote_title">" Annabella "</div>
                               <p class="test_quote_text">Thanks Lysonvn, I am a foreign visitor but I am very friendly. I will recommend my friends to uses Lysonvn service.</p>
                            </div>

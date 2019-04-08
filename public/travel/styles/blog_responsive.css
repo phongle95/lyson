@@ -198,6 +198,18 @@
 		line-height: 44px;
 		padding-left: 36px;
 		padding-right: 36px;
+    }
+    .button1
+	{
+		height: 44px;
+		border-radius: 22px;
+	}
+	.button1 a
+	{
+		line-height: 44px;
+		padding-left: 36px;
+        padding-right: 36px;
+        margin-left: 1px;
 	}
 	.logo a img
 	{

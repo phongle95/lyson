@@ -20,7 +20,8 @@ class TrangChuController extends Controller
         $travel = travel::where('khuyenMai',0)->orderBy('id','DESC')->limit(4)->get();
         $hotel = hotel::orderBy('id','DESC')->limit(4)->get();
         $news = tin::orderBy('id','DESC')->limit(5)->get();
-        return view('trangchu.pages.trangchu',['travelkm'=>$travelkm,'travel'=>$travel,'hotel'=>$hotel,'news'=>$news]);
+        $car = car::orderBy('id','DESC')->limit(3)->get();
+        return view('trangchu.pages.trangchu',['travelkm'=>$travelkm,'travel'=>$travel,'hotel'=>$hotel,'news'=>$news,'car'=>$car]);
     }
 
     //trang chủ
@@ -112,5 +113,10 @@ class TrangChuController extends Controller
         $news = tin::orderBy('id','DESC')->offset(5)->limit(4)->get();
         $ketqua = tin::where('tieuDe','like','%'.$tukhoa.'%')->orwhere('description','like','%'.$tukhoa.'%')->paginate(5);
         return view('trangchu.timkiem.news',['ketqua'=>$ketqua,'news'=>$news,'loaitin'=>$loaitin]);
+    }
+
+
+    public function tauSupper(){
+        return view('trangchu.pages.taulyson');
     }
 }

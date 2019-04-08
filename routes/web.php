@@ -34,6 +34,9 @@ Route::get('lien-he',['uses'=>'TrangChuController@lienhe','as'=>'trangchu.pages.
 //tim kiếm
 Route::get('tim-kiem',['uses'=>'TrangChuController@timkiem','as'=>'trangchu.timkiem.news']);
 
+//tàu lý sơn
+Route::get('gia-ve-tau-ly-son',['uses'=>'TrangChuController@tauSupper','as'=>'trangchu.pages.taulyson']);
+
 
 Route::get('du-lich-{slug}_{id}.html', [
     'uses' => 'TrangChuController@chiTietDuLich',

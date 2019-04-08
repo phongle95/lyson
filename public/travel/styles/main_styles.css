@@ -1603,6 +1603,24 @@ section
 	padding-top: 44px;
 	padding-right: 40px;
 }
+
+.test_content_container1
+{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 35.1%;
+	background: rgba(49, 18, 75, 0.8);
+}
+.test_content1
+{
+	width: 100%;
+	height: 100%;
+	padding-left: 38px;
+	padding-top: 20px;
+	padding-right: 40px;
+}
 .test_item_info
 {
 	position: absolute;
