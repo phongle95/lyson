@@ -15,7 +15,7 @@
                     <!-- Blog Post -->
                     <div class="blog_post">
                         <div class="blog_post_image">
-                            <img class="custom-img" src="/{{ $chitiet->img }}" alt="du lịch lý sơn">
+                            <img class="custom-img" src="/upload/{{ $chitiet->img }}" alt="du lịch lý sơn">
                             <div class="blog_post_date d-flex flex-column align-items-center justify-content-center">
                                 <div class="blog_post_day">{{ $chitiet->id }}</div>
                                 <div class="blog_post_month">{{ date("d-m-Y", strtotime($chitiet->date)) }}</div>
@@ -25,7 +25,7 @@
                         <div class="fb-like" data-href="{{ route('trangchu.chitiet.news',['slug'=>str_slug($chitiet->tieuDe),'id'=>$chitiet->id]) }}" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
                     </div>
                     <div class="blog_post">
-                        <h1 style="font-family: Times, serif;color:black; font-size: 300%;font-weight:700;">{{ $chitiet->tieuDe }}</h1>
+                        <h1 style="font-family: Times, serif;color:black; font-size: 200%;font-weight:700;">{{ $chitiet->tieuDe }}</h1>
                         <div class="rating_r rating_r_4 hotel_rating">
                             <i></i>
                             <i></i>

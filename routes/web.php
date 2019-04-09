@@ -24,6 +24,10 @@ Route::get('gioi-thieu',['uses'=>'TrangChuController@gioithieu','as'=>'trangchu.
 
 //dịch vụ
 Route::get('dich-vu',['uses'=>'TrangChuController@dichvu','as'=>'trangchu.pages.dichvu']);
+//hotel
+Route::get('khach-san-ly-son',['uses'=>'TrangChuController@hotel','as'=>'trangchu.pages.hotel']);
+//car
+Route::get('thue-xe-ly-son',['uses'=>'TrangChuController@car','as'=>'trangchu.pages.car']);
 
 //tin tức
 Route::get('tin-tuc',['uses'=>'TrangChuController@tintuc','as'=>'trangchu.pages.tintuc']);
@@ -36,6 +40,9 @@ Route::get('tim-kiem',['uses'=>'TrangChuController@timkiem','as'=>'trangchu.timk
 
 //tàu lý sơn
 Route::get('gia-ve-tau-ly-son',['uses'=>'TrangChuController@tauSupper','as'=>'trangchu.pages.taulyson']);
+
+//máy bay
+Route::get('dat-ve-may-bay',['uses'=>'TrangChuController@maybay','as'=>'trangchu.pages.maybay']);
 
 
 Route::get('du-lich-{slug}_{id}.html', [

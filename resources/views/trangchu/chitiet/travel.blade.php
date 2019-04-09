@@ -14,7 +14,7 @@
                 <div class="blog_post_container">
                     <!-- Blog Post -->
                     <div class="blog_post">
-                        <h1 style="font-family: Times, serif;color:black; font-size: 300%;font-weight:700;">Tên Tour : {{ $chitiet->tenTour }}</h1>
+                        <h1 style="font-family: Times, serif;color:black; font-size: 200%;font-weight:700;">Tên Tour : {{ $chitiet->tenTour }}</h1>
                         <div class="rating_r rating_r_4 hotel_rating">
                             <i></i>
                             <i></i>

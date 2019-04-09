@@ -38,6 +38,30 @@
         </div>
     </div>
 </div>
+<div class="trending">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h2 class="section_title">Khách Sạn Tốt Nhất</h2>
+            </div>
+        </div>
+        <div class="row trending_container">
+            @foreach ($hotel as $item)
+            <!-- Trending Item -->
+            <div class="col-lg-3 col-sm-6">
+                <div class="trending_item clearfix">
+                    <div class="trending_image"><img style="height:100px;" src="/upload/{{ $item->img }}" alt="khách sạn lý sơn"></div>
+                    <div class="trending_content">
+                        <div class="trending_title"><a href="{{ route('trangchu.chitiet.hotel',['slug'=>str_slug($item->tenHotel),'id'=>$item->id]) }}">{{ $item->tenHotel }}</a></div>
+                        <div class="trending_price">From {{ number_format($item->gia) }}.vnđ</div>
+                        <div class="trending_location">{{ $item->diaChi }}</div>
+                    </div>
+                </div>
+            </div>
+            @endforeach
+        </div>
+    </div>
+</div>
 <!-- Intro -->
 <div class="intro">
     <div class="container">
@@ -211,34 +235,11 @@
         </div>
     </div>
 </div>
-<div class="trending">
-    <div class="container">
-        <div class="row">
-            <div class="col text-center">
-                <h2 class="section_title">Khách Sạn Tốt Nhất</h2>
-            </div>
-        </div>
-        <div class="row trending_container">
-            @foreach ($hotel as $item)
-            <!-- Trending Item -->
-            <div class="col-lg-3 col-sm-6">
-                <div class="trending_item clearfix">
-                    <div class="trending_image"><img style="height:100px;" src="/upload/{{ $item->img }}" alt="khách sạn lý sơn"></div>
-                    <div class="trending_content">
-                        <div class="trending_title"><a href="{{ route('trangchu.chitiet.hotel',['slug'=>str_slug($item->tenHotel),'id'=>$item->id]) }}">{{ $item->tenHotel }}</a></div>
-                        <div class="trending_price">From {{ number_format($item->gia) }}.vnđ</div>
-                        <div class="trending_location">{{ $item->diaChi }}</div>
-                    </div>
-                </div>
-            </div>
-            @endforeach
-        </div>
-    </div>
-</div>
+
 <br>
 <br>
 <br> @endsection @section('meta')
-<title>Du Lịch Lý Sơn - Thuê Xe Đà Nẵng - Khách Sạn Lý Sơn</title>
+<title>Du Lịch Lý Sơn - Khách Sạn Lý Sơn</title>
 <meta name="keywords" content="du lịch lý sơn ,tour lý sơn,du lịch lý sơn giá rẻ,du lịch quảng ngãi lý sơn,du lịch đà nẵng lý sơn , du lịch hội an lý sơn" />
 <meta name="description" content='lysonvn là kênh thông tin online hổ trợ đặt tour , đặt phòng khách sạn cho thuê xe giá rẻ khi đi du lịch lý sơn , đà nẵng , hội an , huế và nhận đặt vé tàu khi đi lý sơn' />
 <!--meta facebook-->
@@ -249,4 +250,4 @@
 <meta itemprop="name" content="du lịch lý sơn chuyên tổ chức các tour du lịch lý sơn , đà nẵng , hội an , huế và cho thuê xe du lịch" />
 <meta itemprop="description" content="lysonvn là kênh thông tin online hổ trợ đặt tour , đặt phòng khách sạn cho thuê xe giá rẻ khi đi du lịch lý sơn , đà nẵng , hội an , huế và nhận đặt vé tàu khi đi lý sơn" />
 <meta itemprop="image" content="travel/images/dulich.jpg" />
-<meta name="og:url" content="{{ route('trangchu.pages.dichvu') }}" /> @endsection
+<meta name="og:url" content="{{ route('trangchu.pages.hotel') }}" /> @endsection

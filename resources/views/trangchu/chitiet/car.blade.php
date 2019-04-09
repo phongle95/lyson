@@ -14,7 +14,7 @@
                 <div class="blog_post_container">
                     <!-- Blog Post -->
                     <div class="blog_post">
-                        <h1 style="font-family: Times, serif;color:black; font-size: 300%;font-weight:700;">Điểm Đi Đến : {{ $chitiet->todo }}</h1>
+                        <h1 style="font-family: Times, serif;color:black; font-size: 200%;font-weight:700;">Điểm Đi Đến : {{ $chitiet->todo }}</h1>
                         <div class="rating_r rating_r_4 hotel_rating">
                             <i></i>
                             <i></i>
@@ -120,7 +120,7 @@
                                 </tr>
 
                             </table>
-                            <div class="button book_button trans_200"><a href="tel:0944224455">Gọi hotline 0944224455</a></div>
+                            <div id="my_centered_buttons" class="button book_button trans_200"><a href="tel:0944224455">Gọi hotline 0944224455</a></div>
                             <br>   <br>
                             <p style="font-family:Arial, sans-serif;font-size: 130%;color:black;font-weight:500;text-align:left">Cần mua vé tàu đi Lý Sơn năm 2019 hãy liên hệ ngay cho chúng tôi 0944.22.44.55 để được tư vấn chi tiết nhất.</p>
                         </div>

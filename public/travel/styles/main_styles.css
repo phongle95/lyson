@@ -2011,7 +2011,7 @@ section
 {
 	margin-bottom: 0px;
 }
-.footer_blog_image
+/* .footer_blog_image
 {
 	width: 60px;
 	height: 60px;
@@ -2020,10 +2020,10 @@ section
 .footer_blog_image img
 {
 	width: 100%;
-}
-.footer_blog_content
+} */
+.footer_blog_content1
 {
-	padding-left: 81px;
+	padding-left: 1px;
 }
 .footer_blog_title
 {

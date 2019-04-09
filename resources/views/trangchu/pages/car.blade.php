@@ -38,56 +38,6 @@
         </div>
     </div>
 </div>
-<!-- Intro -->
-<div class="intro">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h1 class="intro_title text-center">Du Lịch Lý Sơn</h1>
-                <p style="font-family:Arial, sans-serif;color:black;font-weight:540;text-align:center;font-size:121%">Lý Sơn là một huyện đảo của tỉnh Quảng Ngãi, nằm cách Cảng Sa Kỳ khoảng 30km. Vì thế để di chuyển đến đảo Lý Sơn, các bạn cần phải di chuyển ra cảng Sa Kỳ rồi sau đó bắt tàu Super biển đông để đi ra đảo Lý Sơn</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-10 offset-lg-1">
-                <div class="intro_text text-center">
-                    <div class="cta_title">Đây là những tour khuyến mãi của chúng tôi</div>
-                    <br>
-
-                </div>
-            </div>
-        </div>
-        <div class="row intro_items">
-            <!-- Intro Item -->
-            @foreach ($travelkm as $item)
-            <div class="col-lg-4 intro_col">
-                <div class="intro_item">
-                    <div class="intro_item_overlay"></div>
-                    <!-- Image by https://unsplash.com/@dnevozhai -->
-                    <div class="intro_item_background" style="background-image:url(/upload/{{ $item->img }})"></div>
-                    <div class="intro_item_content d-flex flex-column align-items-center justify-content-center">
-                        <div class="intro_date">ngày {{ date("d-m-Y", strtotime($item->date)) }}</div>
-                        <div class="button intro_button">
-                            <div class="button_bcg"></div>
-                            <a href="{{ route('trangchu.chitiet.travel',['slug'=>str_slug($item->tenTour),'id'=>$item->id]) }}">Chi Tiết<span></span><span></span><span></span></a>
-                        </div>
-                        <div class="intro_center text-center">
-                            <h3 style="font-family: Times, serif;color:white; font-size: 300%;font-weight:700">{{ $item->tenTour }}</h3>
-                            <div class="intro_price">Giá : {{ number_format($item->gia) }}vnđ</div>
-                            <div class="rating rating_4">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            @endforeach
-        </div>
-    </div>
-</div>
 <!-- Testimonials -->
 <div class="testimonials">
     <div class="test_border"></div>
@@ -160,6 +110,57 @@
         </div>
     </div>
 </div>
+<!-- Intro -->
+<div class="intro">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="intro_title text-center">Du Lịch Lý Sơn</h1>
+                <p style="font-family:Arial, sans-serif;color:black;font-weight:540;text-align:center;font-size:121%">Lý Sơn là một huyện đảo của tỉnh Quảng Ngãi, nằm cách Cảng Sa Kỳ khoảng 30km. Vì thế để di chuyển đến đảo Lý Sơn, các bạn cần phải di chuyển ra cảng Sa Kỳ rồi sau đó bắt tàu Super biển đông để đi ra đảo Lý Sơn</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <div class="intro_text text-center">
+                    <div class="cta_title">Đây là những tour khuyến mãi của chúng tôi</div>
+                    <br>
+
+                </div>
+            </div>
+        </div>
+        <div class="row intro_items">
+            <!-- Intro Item -->
+            @foreach ($travelkm as $item)
+            <div class="col-lg-4 intro_col">
+                <div class="intro_item">
+                    <div class="intro_item_overlay"></div>
+                    <!-- Image by https://unsplash.com/@dnevozhai -->
+                    <div class="intro_item_background" style="background-image:url(/upload/{{ $item->img }})"></div>
+                    <div class="intro_item_content d-flex flex-column align-items-center justify-content-center">
+                        <div class="intro_date">ngày {{ date("d-m-Y", strtotime($item->date)) }}</div>
+                        <div class="button intro_button">
+                            <div class="button_bcg"></div>
+                            <a href="{{ route('trangchu.chitiet.travel',['slug'=>str_slug($item->tenTour),'id'=>$item->id]) }}">Chi Tiết<span></span><span></span><span></span></a>
+                        </div>
+                        <div class="intro_center text-center">
+                            <h3 style="font-family: Times, serif;color:white; font-size: 300%;font-weight:700">{{ $item->tenTour }}</h3>
+                            <div class="intro_price">Giá : {{ number_format($item->gia) }}vnđ</div>
+                            <div class="rating rating_4">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @endforeach
+        </div>
+    </div>
+</div>
+
 <!-- Offers -->
 <div class="offers">
     <div class="container">
@@ -238,7 +239,7 @@
 <br>
 <br>
 <br> @endsection @section('meta')
-<title>Du Lịch Lý Sơn - Thuê Xe Đà Nẵng - Khách Sạn Lý Sơn</title>
+<title>Thuê Xe Quảng Ngãi - Thuê Xe Đà Nẵng - Du Lịch Lý Sơn</title>
 <meta name="keywords" content="du lịch lý sơn ,tour lý sơn,du lịch lý sơn giá rẻ,du lịch quảng ngãi lý sơn,du lịch đà nẵng lý sơn , du lịch hội an lý sơn" />
 <meta name="description" content='lysonvn là kênh thông tin online hổ trợ đặt tour , đặt phòng khách sạn cho thuê xe giá rẻ khi đi du lịch lý sơn , đà nẵng , hội an , huế và nhận đặt vé tàu khi đi lý sơn' />
 <!--meta facebook-->
@@ -249,4 +250,4 @@
 <meta itemprop="name" content="du lịch lý sơn chuyên tổ chức các tour du lịch lý sơn , đà nẵng , hội an , huế và cho thuê xe du lịch" />
 <meta itemprop="description" content="lysonvn là kênh thông tin online hổ trợ đặt tour , đặt phòng khách sạn cho thuê xe giá rẻ khi đi du lịch lý sơn , đà nẵng , hội an , huế và nhận đặt vé tàu khi đi lý sơn" />
 <meta itemprop="image" content="travel/images/dulich.jpg" />
-<meta name="og:url" content="{{ route('trangchu.pages.dichvu') }}" /> @endsection
+<meta name="og:url" content="{{ route('trangchu.pages.car') }}" /> @endsection

@@ -88,13 +88,13 @@
                 <div class="search_tabs_container">
                     <div class="search_tabs d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
                         <div class="search_tab active d-flex flex-row align-items-center justify-content-lg-center justify-content-start">
-                            <a style="color:#2d2c2c" href="https://lysonvn.com/khach-san-nha-nghi-ly-tri_4.html"><img src="travel/images/suitcase.png" alt="">KHÁCH SẠN</a>
+                            <a style="color:#2d2c2c" href="{{ route('trangchu.pages.hotel') }}"><img src="travel/images/suitcase.png" alt="">KHÁCH SẠN</a>
                         </div>
                         <div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start">
-                            <a style="color:#2d2c2c" href="https://lysonvn.com/thue-xe-tu-san-bay-da-nang-cang-sa-ky_4.html"><img src="travel/images/bus.png" alt="">XE DU LỊCH</a>
+                            <a style="color:#2d2c2c" href="{{ route('trangchu.pages.car') }}"><img src="travel/images/bus.png" alt="">XE DU LỊCH</a>
                         </div>
                         <div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start">
-                            <a style="color:#2d2c2c" href="{{ route('trangchu.pages.dichvu') }}"><img src="travel/images/departure.png" alt="">MÁY BAY</a>
+                            <a style="color:#2d2c2c" href="{{ route('trangchu.pages.maybay') }}"><img src="travel/images/departure.png" alt="">MÁY BAY</a>
                         </div>
                         {{--
                         <div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="travel/images/island.png" alt="">trips</div>
@@ -167,7 +167,8 @@
     <div class="container">
         <div class="row">
             <div class="col text-center">
-                <h2 class="section_title">Các Dịch Vụ Thuê Xe Của Chúng Tôi</h2>
+                <h2 class="section_title">Các cách di chuyển để đi đến Cảng Sa Kỳ - Đảo Lý Sơn</h2>
+                <p style="font-family:Arial, sans-serif;color:black;font-weight:540;text-align:center;font-size:121%">Để đi đến đảo Lý Sơn, các bạn cần phải đi tàu, hoặc máy bay đến Quảng Ngãi, Sân bay Chu Lai, Sân bay Đà Nẵng, sau đó các bạn di chuyển đến cảng Sa Kỳ, tỉnh Quảng Ngãi bằng xe ô tô hoặc xe Khách. Sau đó sẽ đặt vé tàu siêu tốc đi từ cảng Sa Kỳ đến Đảo Lý Sơn</p>
             </div>
         </div>
         <div class="row">
@@ -176,9 +177,10 @@
                 <div class="test_slider_container">
                     <div class="owl-carousel owl-theme test_slider">
                         @foreach ($car as $item)
+
                         <!-- Testimonial Item -->
                         <div class="owl-item">
-                            <div class="test_item" style="height:500px">
+                            <div class="test_item">
                                 <a href="{{ route('trangchu.chitiet.car',['slug'=>str_slug($item->todo),'id'=>$item->id]) }}">
                                     <div class="test_image"><img src="/upload/{{ $item->img }}" alt="thue xe o to"></div>
                                 </a>
@@ -187,9 +189,6 @@
                                 </a>
                                 <div class="test_content_container">
                                     <div class="test_content">
-                                        <div class="test_item_info">
-                                            <div class="test_name"><a style="color:orange;" href="{{ route('trangchu.chitiet.car',['slug'=>str_slug($item->todo),'id'=>$item->id]) }}">chi tiết</a></div>
-                                        </div>
                                         <div class="test_quote_title">" {{ $item->todo }} "</div>
                                         <p class="test_quote_text">{{ $item->description }}</p>
                                     </div>
@@ -207,7 +206,7 @@
                                     <stop offset='100%' stop-color='#8d4fff' />
                                 </linearGradient>
                             </defs>
-                            <path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
+                            <path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h20c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
                         M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
                         C22.545,2,26,5.541,26,9.909V23.091z" />
                             <polygon class="nav_arrow" fill="#F3F6F9" points="15.044,22.222 16.377,20.888 12.374,16.885 16.377,12.882 15.044,11.55 9.708,16.885 11.04,18.219
@@ -223,7 +222,7 @@
                                     <stop offset='100%' stop-color='#8d4fff' />
                                 </linearGradient>
                             </defs>
-                            <path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
+                            <path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h20c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
                         M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
                         C22.545,2,26,5.541,26,9.909V23.091z" />
                             <polygon class="nav_arrow" fill="#F3F6F9" points="13.044,11.551 11.71,12.885 15.714,16.888 11.71,20.891 13.044,22.224 18.379,16.888 17.048,15.554
@@ -250,8 +249,7 @@
                         <div class="owl-item cta_item text-center">
                             <div class="cta_title">Các thông tin bổ ích trước và trong khi đi du lịch đảo Lý Sơn</div>
                             <p style="font-family:Arial, sans-serif;color:black;font-weight:540;text-align:center;font-size:121%">Du lịch Lý Sơn chưa bao giờ là khó khăn</p>
-                            <img style="height:350px" src="/upload/{{ $item->img }}" alt="ly son">
-                            <br>
+                            {{-- <img style="height:350px" src="/upload/{{ $item->img }}" alt="ly son"> --}}
                             <div class="rating_r rating_r_4">
                                 <i></i>
                                 <i></i>
@@ -448,6 +446,7 @@
         </div>
     </div>
 </div>
+{{--
 <div class="trending">
     <div class="container">
         <div class="row">
@@ -471,9 +470,10 @@
             @endforeach
         </div>
     </div>
-</div>
+</div> --}}
+<br>
 <div class="contact">
-    <div class="contact_background" style="background-image:url(travel/images/contact.png)"></div>
+    <div class="contact_background" style="background-image:url(travel/images/contact.jpg)"></div>
     <div class="container">
         <div class="row">
             <div class="col-lg-5">

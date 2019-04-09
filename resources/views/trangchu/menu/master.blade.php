@@ -77,6 +77,7 @@
             tr:nth-child(even) {
               background-color: #dddddd;
             }
+            #my_centered_buttons { display: flex; justify-content: center; }
     </style>
 </head>
 
@@ -213,8 +214,7 @@
 
                                 <!-- Footer blog item -->
                                 <div class="footer_blog_item clearfix">
-                                    {{-- <div class="footer_blog_image"><img src="/upload{{ $item->img }}" alt="du lịch lý sơn"></div> --}}
-                                    <div class="footer_blog_content">
+                                    <div class="footer_blog_content1">
                                         <div class="footer_blog_title"><a href="{{ route('trangchu.chitiet.news',['slug'=>str_slug($item->tieuDe),'id'=>$item->id]) }}">{{ $item->tieuDe }}</a></div>
                                         <div class="footer_blog_date">{{ date("d-m-Y", strtotime($item->date)) }}</div>
                                     </div>

@@ -38,7 +38,25 @@ class TrangChuController extends Controller
         return view('trangchu.pages.dichvu',['travel'=>$travel,'hotel'=>$hotel,'travelkm'=>$travelkm,'car'=>$car]);
     }
 
-    //dịch vụ
+    //hotel
+    public function hotel(){
+        $travelkm = travel::where('khuyenMai',1)->orderBy('id','DESC')->limit(3)->get();
+        $travel = travel::where('khuyenMai',0)->orderBy('id','DESC')->limit(4)->get();
+        $hotel = hotel::orderBy('id','DESC')->limit(4)->get();
+        $car = car::orderBy('id','DESC')->limit(3)->get();
+        return view('trangchu.pages.hotel',['travel'=>$travel,'hotel'=>$hotel,'travelkm'=>$travelkm,'car'=>$car]);
+    }
+
+    //car
+    public function car(){
+        $travelkm = travel::where('khuyenMai',1)->orderBy('id','DESC')->limit(3)->get();
+        $travel = travel::where('khuyenMai',0)->orderBy('id','DESC')->limit(4)->get();
+        $hotel = hotel::orderBy('id','DESC')->limit(4)->get();
+        $car = car::orderBy('id','DESC')->limit(3)->get();
+        return view('trangchu.pages.car',['travel'=>$travel,'hotel'=>$hotel,'travelkm'=>$travelkm,'car'=>$car]);
+    }
+
+    //tin tuc
     public function tintuc(){
         $loaitin = loaitin::all();
         $tin = tin::orderBy('id','DESC')->paginate(5);
@@ -118,5 +136,9 @@ class TrangChuController extends Controller
 
     public function tauSupper(){
         return view('trangchu.pages.taulyson');
+    }
+
+    public function maybay(){
+        return view('trangchu.pages.maybay');
     }
 }
